@@ -40,7 +40,7 @@ Here is a simple echo server
 .. literalinclude:: ../../code/tcp-echo-server/main.c
     :language: c
     :linenos:
-    :lines: 68-
+    :lines: 72-
     :emphasize-lines: 4-5,7-10
 
 You can see the utility function ``uv_ip4_addr`` being used to convert from
@@ -63,7 +63,7 @@ In this case we also establish interest in reading from this stream.
 .. literalinclude:: ../../code/tcp-echo-server/main.c
     :language: c
     :linenos:
-    :lines: 51-66
+    :lines: 55-70
     :emphasize-lines: 9-10
 
 The remaining set of functions is very similar to the streams example and can
@@ -112,7 +112,7 @@ address from a `DHCP`_ server -- DHCP Discover.
 .. literalinclude:: ../../code/udp-dhcp/main.c
     :language: c
     :linenos:
-    :lines: 7-11,104-
+    :lines: 8-11,104-
     :emphasize-lines: 8,10-11,17-18,21
 
 .. note::
@@ -199,7 +199,7 @@ Libera.chat to see an example of DNS resolution.
 .. literalinclude:: ../../code/dns/main.c
     :language: c
     :linenos:
-    :lines: 61-
+    :lines: 62-
     :emphasize-lines: 12
 
 If ``uv_getaddrinfo`` returns non-zero, something went wrong in the setup and
@@ -216,8 +216,8 @@ call ``uv_freeaddrinfo`` in the callback.
 .. literalinclude:: ../../code/dns/main.c
     :language: c
     :linenos:
-    :lines: 42-60
-    :emphasize-lines: 8,16
+    :lines: 43-60
+    :emphasize-lines: 7,15
 
 libuv also provides the inverse `uv_getnameinfo`_.
 
